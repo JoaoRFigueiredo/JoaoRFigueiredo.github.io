@@ -10848,3 +10848,14 @@ textarea.form-control-lg {
   width: 100%;
   text-align: center;
 }
+
+/* video do carro */
+.embed-responsive-16by9 iframe {
+  width: 90%;
+  height: 350px;
+}
+
+
+.video-section {
+  min-height: calc(100vh - 100px); /* Adjust the value as needed */
+} 
