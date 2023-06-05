@@ -75,10 +75,10 @@
                             </div>
                         </div>
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-block">Login</button>
-                        </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="login-button">Login</button>
+                          </div>
                         <div class="text-center mt-3">
-                            <a href="#!">Esqueceu a password?</a>
+                            <a href="index.html">Esqueceu a password?</a>
                         </div>
                     </form>
                 </div>
@@ -97,3 +97,25 @@
     </footer>
 
 </html>
+
+<script>
+    document.getElementById("login-button").addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+  
+      // Get the email and password input values
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+  
+      // Perform your login logic here
+      // For example, check if the email and password are valid
+  
+      // If the login is successful, redirect to the "index.html" page
+      if (email === "pw@gmail.com" && password === "1234567") {
+        window.location.href = "index.html";
+      } else {
+        // If the login fails, display an error message or perform other actions
+        alert("Invalid email or password");
+      }
+    });
+  </script>
+  
